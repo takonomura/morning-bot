@@ -20,8 +20,8 @@
 # リポジトリをクローンする
 $ git clone https://github.com/takonomura/morning-bot.git
 $ cd morning-bot
-# Docker イメージをビルドする
-$ make
+# Docker イメージをプルする
+$ docker pull takonomura/morning-bot:latest
 # 設定ファイルを書く
 $ cp config.example.json config.json
 $ $EDITOR config.json

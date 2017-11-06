@@ -1,0 +1,30 @@
+{
+  "weathernews": {
+    "longitude": 35.64,
+    "latitude": 139.70,
+    "imgurClientID": "YOUR IMGUR CLIENT ID"
+  },
+  "traindelay": {
+    "keio": [
+      "keio_down",
+      "keio_up",
+      "sagamihara_down",
+      "sagamihara_up",
+      "inokashira_down",
+      "inokashira_up"
+    ],
+    "tokyu": [
+      "toyoko_up",
+      "toyoko_down",
+      "meguro_up",
+      "meguro_down",
+      "dento_up",
+      "dento_down",
+      "oimachi_up",
+      "oimachi_down",
+      "ikegami",
+      "tamagawa"
+    ]
+  },
+  "traininfo": [112, 134]
+}

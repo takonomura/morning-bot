@@ -1,0 +1,14 @@
+{
+  "name": "morning-bot",
+  "version": "1.0.0",
+  "description": "Slack Bot for morning",
+  "main": "src/index.js",
+  "repository": "https://github.com/takonomura/morning-bot",
+  "author": "takonomura",
+  "private": true,
+  "dependencies": {
+    "jsdom": "^11.3.0",
+    "node-fetch": "^1.7.3",
+    "puppeteer": "^0.12.0"
+  }
+}

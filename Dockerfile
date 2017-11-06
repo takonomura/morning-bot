@@ -16,13 +16,14 @@ RUN apt-get update && apt-get install -y wget unzip --no-install-recommends \
     && apt-get purge --auto-remove -y curl unzip \
     && rm -rf /src/*.deb
 
+COPY . /app/
+WORKDIR /app
+
 RUN groupadd -r pptruser && useradd -r -g pptruser -G audio,video pptruser \
     && mkdir -p /home/pptruser/Downloads \
-    && chown -R pptruser:pptruser /home/pptruser
+    && chown -R pptruser:pptruser /home/pptruser \
+    && chown -R pptruser:pptruser /app
 USER pptruser
-
-COPY --chown=pptruser:pptruser . /app/
-WORKDIR /app
 
 RUN yarn
 

@@ -1,4 +1,4 @@
-FROM node:8-slim
+FROM node:8.9.1-slim
 
 RUN apt-get update && apt-get install -y wget unzip --no-install-recommends \
     && wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - \

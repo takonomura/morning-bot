@@ -29,6 +29,14 @@ $ $EDITOR config.json
 $ MORNING_BOT_CONFIG="$(cat config.json)" SLACK_INCOMING_WEBHOOK_URL="YOUR SLACK INCOMING WEBHOOK" make run
 ```
 
+## Chrome がエラーを吐く場合
+
+以下の環境変数をつけると動くかも
+
+```
+CHROME_ARGS="--no-sandbox --disable-setuid-sandbox"
+```
+
 ## スクリーンショット
 
 | Mac | iPhone |
